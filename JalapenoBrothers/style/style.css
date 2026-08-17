@@ -226,6 +226,7 @@ main{
   flex-direction: column;
   text-align: center;
   gap: 35px;
+  margin-bottom: 60px;
 }
 
 .product-area{
@@ -274,4 +275,156 @@ main{
 
 .content-info a{
   color: var(--first-color);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  padding: 30px 20px;
+  background-color: var(--second-color);
+}
+
+footer h6{
+  color: var(--fifth-color);
+}
+
+.footer{
+    display: none;
+  }
+
+.span-line{
+  width: 80%;
+  height: 1px;
+  background-color: var(--fourth-color);
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.menu{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu h6, a{
+  color: var(--first-color);
+}
+
+.menu a:hover{
+  color:  var(--fifth-color);
+}
+
+@media (max-width: 768px){
+  
+  header{
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .header-content{
+    gap: 15px;
+  }
+
+  .logo{
+    max-width: 110px;
+  }
+
+  .social-media-menu{
+    gap: 7px;
+    min-width: 150px;
+  }
+
+  .social-icon img{
+    max-width: 28px;
+  }
+
+  .hero-section{
+    width: 100%;
+  }
+
+  main{
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .product-area{
+    gap: 15px;
+  }
+
+  .content-info h5{
+    min-height: 3em;
+  }
+
+}
+
+@media (max-width: 425px){
+
+  header{
+    margin-bottom: 72px;
+  }
+
+  .header{
+    display: none;
+  }
+
+  .logo{
+    max-width: 180px;
+  }
+
+  .header-content{
+    flex-direction: column;
+  }
+
+  .header-menu{
+    order: 1;
+    gap: 20px;
+  }
+
+  .hero-content{
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .hero-content img{
+    width: 50%;
+  }
+
+  .hero-text, .image-box{
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .product-area{
+    grid-template-columns: 1fr;
+  }
+
+  .content-info h5{
+    min-height: 1em;
+  }
+
+  footer h6{
+    text-align: center;
+  }
+
+  .social-icon img{
+    max-width: 40px;
+  }
+
+  .footer{
+    display: flex;
+    gap: 20px;
+  }
+
 }
