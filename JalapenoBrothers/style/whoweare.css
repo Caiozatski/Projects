@@ -48,7 +48,7 @@ main{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 7% 9%;
+  padding: 9% 9%;
   gap: 50px;
 }
 
@@ -68,10 +68,28 @@ main{
   flex-direction: column;
 }
 
+.text-area h3, h5{
+  text-shadow: 1px 1px 0 var(--fourth-color);
+}
+
 @media (max-width: 768px){
   .hero-section{
     width: 100%;
   }
+
+  main{
+    width: 100%;
+    padding: 15% 8%;
+  }
+
+  .text-area h3{
+    font-size: clamp(1.75rem, 2vw, 2.75rem);
+  }
+
+  .text-area h4{
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width: 425px){
@@ -91,4 +109,25 @@ main{
     text-align: center;
     gap: 15px;
   }
+
+  main{
+    gap: 25px;
+    padding: 26% 20px;
+    background-size: cover;
+  }
+
+  .content-area{
+    flex-direction: column;
+  }
+
+  .text-area, .image-area{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .image-area img{
+    width: 80%;
+  }
+
 }

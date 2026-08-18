@@ -1,0 +1,12 @@
+main{
+  width: min(90%, 1440px);
+}
+
+.image-gallery{
+  display: flex;
+  gap: 15px;
+}
+
+.image-gallery img{
+  width: 45px;
+}
