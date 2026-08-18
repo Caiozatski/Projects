@@ -1,0 +1,94 @@
+.hero-section {
+  background-image: url(/JalapenoBrothers/assets/heroback.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: min(90%, 1400px);
+  aspect-ratio: 2.2 / 1;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text, .image-box{
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text p{
+  max-width: 750px;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.hero-content img{
+  width: 80%;
+}
+
+main{
+  background-image: url(/JalapenoBrothers/assets/MainBg.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: min(90%, 1400px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 7% 9%;
+  gap: 50px;
+}
+
+.content-area{
+  display: flex;
+  gap: 30px;
+}
+
+.reverse{
+  flex-direction: row-reverse;
+}
+
+.text-area, .image-area{
+  width: 50%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px){
+  .hero-section{
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px){
+   .hero-content{
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .hero-content img{
+    width: 50%;
+  }
+
+  .hero-text, .image-box{
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+  }
+}

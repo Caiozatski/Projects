@@ -181,101 +181,6 @@ header{
   width: 45px;
 }
 
-.hero-section {
-  background-image: url(/JalapenoBrothers/assets/heroback.png);
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: min(90%, 1400px);
-  aspect-ratio: 2.2 / 1;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-content{
-  width: 82%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: clamp(2rem, 5vw, 6rem);
-}
-
-.hero-text, .image-box{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-box{
-  width: 50%;
-}
-
-.hero-content img{
-  width: 80%;
-}
-
-main{
-  width: min(80%, 1400px);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 35px;
-  margin-bottom: 60px;
-}
-
-.product-area{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px ;
-}
-
-.product-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  border: 1px solid var(--second-color);
-  border-radius: 18px;
-  padding: 0;
-  padding-top: 15px;
-  overflow: hidden;
-  justify-content: space-between;
-}
-
-.product-image{
-  width: 100%;
-  object-fit: contain;
-  max-width: 240px;
-  margin: 0 auto;
-  flex: 1;
-
-}
-
-.content-info{
-  background-color: var(--second-color);
-  color: var(--first-color);
-  width: 100%;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.content-info h5{ 
-  min-height: 2em;
-}
-
-.content-info a{
-  color: var(--first-color);
-}
 
 footer{
   display: flex;
@@ -346,24 +251,6 @@ footer h6{
   .social-icon img{
     max-width: 28px;
   }
-
-  .hero-section{
-    width: 100%;
-  }
-
-  main{
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .product-area{
-    gap: 15px;
-  }
-
-  .content-info h5{
-    min-height: 3em;
-  }
-
 }
 
 @media (max-width: 425px){
@@ -387,31 +274,6 @@ footer h6{
   .header-menu{
     order: 1;
     gap: 20px;
-  }
-
-  .hero-content{
-    flex-direction: column;
-    padding: 30px 20px;
-    width: 100%;
-    gap: 30px;
-  }
-
-  .hero-content img{
-    width: 50%;
-  }
-
-  .hero-text, .image-box{
-    width: 100%;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .product-area{
-    grid-template-columns: 1fr;
-  }
-
-  .content-info h5{
-    min-height: 1em;
   }
 
   footer h6{
