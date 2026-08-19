@@ -1,12 +1,98 @@
 main{
-  width: min(90%, 1440px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .image-gallery{
   display: flex;
+  --s: 120px;
+  --d: 20s;
+  --n: 4;
   gap: 15px;
+  overflow: hidden;
+}
+
+.image-gallery img{
+  width: var(--s);
+  offset: shape(from calc(var(--s)/-2) 50%, hline by calc(sibling-count() * var(--s)));
+  animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());
+  animation-direction: normal;
+}
+
+.reverse img{
+  animation-direction: reverse;
+}
+
+@keyframes x { 
+  to {offset-distance: 100%};
 }
 
 .image-gallery img{
   width: 45px;
+}
+
+.form-area{
+  width: min(90%, 1440px);
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.form-row{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: start;
+}
+
+.info input{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--second-color);
+}
+
+#message {
+  width: 100%;
+  height: 130px;
+  max-height: 130px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: left;
+  vertical-align: top;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  border: 1px solid var(--second-color);
+  resize: vertical;
+}
+
+#submit{
+  width: 10%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: var(--second-color);
+  border: none;
+  color: var(--first-color);
+  cursor: pointer;
 }
