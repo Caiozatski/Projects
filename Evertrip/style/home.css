@@ -5,10 +5,7 @@
   overflow: hidden;
 }
 
-.slider_tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
-.slider_tabs input:nth-child(2):checked ~ .labels label:nth-child(2),
-.slider_tabs input:nth-child(3):checked ~ .labels label:nth-child(3),
-.slider_tabs input:nth-child(4):checked ~ .labels label:nth-child(4){
+.labels label.active {
   width: 60px;
   background-color: var(--color-navy);
 }
@@ -43,7 +40,7 @@
 
 .hero_backgrounds {
   display: flex;
-  width: 400%;
+  width: 500%;
   height: 100%;
   position: relative;
   transition: transform 1s ease-in;
@@ -51,7 +48,7 @@
 }
 
 .hero_backgrounds > div {
-  width: 25%;
+  width: 20%;
   height: 100%;
 
   background-position: center;
@@ -63,26 +60,13 @@
   background-image: url(/Evertrip/assets/Heroimg1.jpg);
 }
 .hero-slider-2 {
-  background-image: url(/Evertrip/assets/Heroimg1.jpg);
+  background-image: url(/Evertrip/assets/Heroimg2.jpg);
 }
 .hero-slider-3 {
-  background-image: url(/Evertrip/assets/Heroimg1.jpg);
+  background-image: url(/Evertrip/assets/Heroimg3.jpg);
 }
 .hero-slider-4 {
-  background-image: url(/Evertrip/assets/Heroimg1.jpg);
-}
-
-#slider1:checked ~ .hero_backgrounds{
-  transform: translateX(0);
-}
-#slider2:checked ~ .hero_backgrounds{
-  transform: translateX(-25%) !important;
-}
-#slider3:checked ~ .hero_backgrounds{
-  transform: translateX(-50%);
-}
-#slider4:checked ~ .hero_backgrounds{
-  transform: translateX(-75%);
+  background-image: url(/Evertrip/assets/Heroimg4.jpg);
 }
 
 .hero-content{
