@@ -1,0 +1,103 @@
+.hero-section{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider_tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
+.slider_tabs input:nth-child(2):checked ~ .labels label:nth-child(2),
+.slider_tabs input:nth-child(3):checked ~ .labels label:nth-child(3),
+.slider_tabs input:nth-child(4):checked ~ .labels label:nth-child(4){
+  width: 60px;
+  background-color: var(--color-navy);
+}
+.slider_tabs input{
+  display: none;
+}
+
+.slider_tabs {
+  height: 100%;
+}
+
+.labels{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.labels label{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-navy);
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.hero_backgrounds {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s ease-in;
+  filter: brightness(0.85);
+}
+
+.hero_backgrounds > div {
+  width: 25%;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-slider-1 {
+  background-image: url(/Evertrip/assets/Heroimg1.jpg);
+}
+.hero-slider-2 {
+  background-image: url(/Evertrip/assets/Heroimg1.jpg);
+}
+.hero-slider-3 {
+  background-image: url(/Evertrip/assets/Heroimg1.jpg);
+}
+.hero-slider-4 {
+  background-image: url(/Evertrip/assets/Heroimg1.jpg);
+}
+
+#slider1:checked ~ .hero_backgrounds{
+  transform: translateX(0);
+}
+#slider2:checked ~ .hero_backgrounds{
+  transform: translateX(-25%) !important;
+}
+#slider3:checked ~ .hero_backgrounds{
+  transform: translateX(-50%);
+}
+#slider4:checked ~ .hero_backgrounds{
+  transform: translateX(-75%);
+}
+
+.hero-content{
+  position: absolute;
+  z-index: 30;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.hero-content h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 94px;
+  position: sticky;
+  top: 0;
+}

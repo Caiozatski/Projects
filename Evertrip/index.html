@@ -5,14 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evertrip</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/home.css">
 </head>
 <body>
 
   <div class="hero-section">
-    <div class="hero-content">
-      <h1>Prepare for you next Trip</h1>
-    </div>
+      <div class="hero-content">
+          <h1>Dream Vacation</h1>
+      </div>
+      <div class="slider_tabs">
+
+          <input type="radio" name="slider" id="slider1" checked>
+          <input type="radio" name="slider" id="slider2">
+          <input type="radio" name="slider" id="slider3">
+          <input type="radio" name="slider" id="slider4">
+
+          <div class="hero_backgrounds">
+              <div class="hero-slider-1"></div>
+              <div class="hero-slider-2"></div>
+              <div class="hero-slider-3"></div>
+              <div class="hero-slider-4"></div>
+          </div>
+
+          <div class="labels">
+              <label for="slider1"></label>
+              <label for="slider2"></label>
+              <label for="slider3"></label>
+              <label for="slider4"></label>
+          </div>
+      </div>
   </div>
   
+  <script src="/Evertrip/scripts/hero-carrosel.js"></script>
+
 </body>
 </html>
